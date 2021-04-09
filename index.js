@@ -5,13 +5,8 @@ function rollThemBones() {
 
   var audio = new Audio("images/diceRoll.wav");
   audio.play();
-
-  var playerOne = Math.floor(Math.random() * 6) + 1;
-  var playerTwo = Math.floor(Math.random() * 6) + 1;
-  var diceOne = "images/dice" + playerOne + ".png";
-  var diceTwo = "images/dice" + playerTwo + ".png";
-  document.querySelector(".img1").src = diceOne;
-  document.querySelector(".img2").src = diceTwo;
+  
+  window.setTimeout(updateDiceImages, 2000);
 
 
   if(playerOne>playerTwo) {
@@ -25,3 +20,12 @@ function rollThemBones() {
 
   //change back to original state.
 }
+
+function updateDiceImages() {
+  var playerOne = Math.floor(Math.random() * 6) + 1;
+  var playerTwo = Math.floor(Math.random() * 6) + 1;
+  var diceOne = "images/dice" + playerOne + ".png";
+  var diceTwo = "images/dice" + playerTwo + ".png";
+  document.querySelector(".img1").src = diceOne;
+  document.querySelector(".img2").src = diceTwo;
+ }
