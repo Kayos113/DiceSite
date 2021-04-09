@@ -13,7 +13,6 @@ function rollThemBones() {
   document.querySelector(".img1").src = diceOne;
   document.querySelector(".img2").src = diceTwo;
 
-  sleep(1000);
 
   if(playerOne>playerTwo) {
     //playerOneWins change
