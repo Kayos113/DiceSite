@@ -7,6 +7,7 @@ function rollThemBones() {
   // document.querySelector(".img2").src = redDice;
 
   var audio = new Audio("images/diceRoll.wav");
+  audio.play();
   sleep(2000);
 
   var diceOne = "images/dice" + playerOne + ".png";
