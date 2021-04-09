@@ -6,7 +6,7 @@ function rollThemBones() {
   var audio = new Audio("images/diceRoll.wav");
   audio.play();
   
-  window.setTimeout(updateDiceImages, 2000);
+  window.setTimeout(updateDiceImages, 1300);
 
 
   if(playerOne>playerTwo) {
